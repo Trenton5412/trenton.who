@@ -416,7 +416,7 @@ export const Box = (): JSX.Element => {
       case "intro":
         return [
           // 橫式 - 所有裝置都使用 1280-1080
-          { src: `${BASE_PATH}BG/Bar.webm`, type: "video/webm", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080_intro.webm`, type: "video/webm", media: "(orientation: landscape)" },
           { src: `${BASE_PATH}BG/1280-1080_intro.mp4`, type: "video/mp4", media: "(orientation: landscape)" },
           // 直式平板 - 使用 800-1080
           { src: `${BASE_PATH}BG/800-1080_intro.webm`, type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
@@ -464,7 +464,7 @@ export const Box = (): JSX.Element => {
       default:
         return [
           // 橫式 - 所有裝置都使用 1280-1080
-          { src: `${BASE_PATH}BG/Bar.webm`, type: "video/webm", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080_intro.webm`, type: "video/webm", media: "(orientation: landscape)" },
           { src: `${BASE_PATH}BG/1280-1080_intro.mp4`, type: "video/mp4", media: "(orientation: landscape)" },
           // 直式平板 - 使用 800-1080
           { src: `${BASE_PATH}BG/800-1080_intro.webm`, type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
