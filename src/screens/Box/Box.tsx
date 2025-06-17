@@ -3,22 +3,25 @@ import { useState, useEffect, useRef } from "react";
 import { Button } from "../../components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Base path for assets in production
+const BASE_PATH = window.location.hostname === 'trenton5412.github.io' ? '/trenton.who/' : '/';
+
 // Define navigation items for reuse
 const navigationItems = [
   {
     id: "about",
     label: "About",
-    imgSrc: "/ButtonImage/About.png",
+    imgSrc: `${BASE_PATH}ButtonImage/About.png`,
   },
   {
     id: "work",
     label: "Work",
-    imgSrc: "/ButtonImage/WORK.png",
+    imgSrc: `${BASE_PATH}ButtonImage/WORK.png`,
   },
   {
     id: "home",
     label: "Home",
-    imgSrc: "/ButtonImage/HOME.png",
+    imgSrc: `${BASE_PATH}ButtonImage/HOME.png`,
   },
 ];
 
@@ -28,8 +31,8 @@ const aboutContent = {
   contact: {
     email: "trenton5412@gmail.com",
     social: [
-      { id: "ig", imgSrc: "/ButtonImage/IG.png", type: "image", url: "https://www.instagram.com/off_trent_on" },
-      { id: "yt", imgSrc: "/ButtonImage/YT.png", type: "image", url: "https://www.youtube.com/@lllolll_TrenT%C3%B6n" },
+      { id: "ig", imgSrc: `${BASE_PATH}ButtonImage/IG.png`, type: "image", url: "https://www.instagram.com/off_trent_on" },
+      { id: "yt", imgSrc: `${BASE_PATH}ButtonImage/YT.png`, type: "image", url: "https://www.youtube.com/@lllolll_TrenT%C3%B6n" },
     ],
   },
 };
@@ -40,63 +43,63 @@ const workPortfolio = [
     id: 1,
     title: "Anime Love Preview",
     category: "Music Video",
-    thumbnail: "/Work/Anime Love 試聽集.png",
-    video: "/Work/Anime Love 試聽集.mp4"
+    thumbnail: `${BASE_PATH}Work/Anime Love 試聽集.png`,
+    video: `${BASE_PATH}Work/Anime Love 試聽集.mp4`
   },
   {
     id: 2,
     title: "SANDWICH",
     category: "3D Animation",
-    thumbnail: "/Work/SANDWICH.png",
-    video: "/Work/SANDWICH.mp4"
+    thumbnail: `${BASE_PATH}Work/SANDWICH.png`,
+    video: `${BASE_PATH}Work/SANDWICH.mp4`
   },
   {
     id: 3,
     title: "SANDWICH Loop",
     category: "3D Animation",
-    thumbnail: "/Work/SANDWICH_Loop.png",
-    video: "/Work/SANDWICH_Loop.mp4"
+    thumbnail: `${BASE_PATH}Work/SANDWICH_Loop.png`,
+    video: `${BASE_PATH}Work/SANDWICH_Loop.mp4`
   },
   {
     id: 4,
     title: "乖乖乖乖乖",
     category: "2D&3D Animation",
-    thumbnail: "/Work/乖乖乖乖乖.png",
-    video: "/Work/乖乖乖乖乖.mp4"
+    thumbnail: `${BASE_PATH}Work/乖乖乖乖乖.png`,
+    video: `${BASE_PATH}Work/乖乖乖乖乖.mp4`
   },
   {
     id: 5,
     title: "全國古蹟日",
     category: "Graphic Animation",
-    thumbnail: "/Work/全國古蹟日.png",
-    video: "/Work/全國古蹟日.mp4"
+    thumbnail: `${BASE_PATH}Work/全國古蹟日.png`,
+    video: `${BASE_PATH}Work/全國古蹟日.mp4`
   },
   {
     id: 6,
     title: "漸速耐力折返跑",
     category: "Collage",
-    thumbnail: "/Work/漸速耐力折返跑.png",
-    video: "/Work/漸速耐力折返跑.mp4"
+    thumbnail: `${BASE_PATH}Work/漸速耐力折返跑.png`,
+    video: `${BASE_PATH}Work/漸速耐力折返跑.mp4`
   },
   {
     id: 7,
     title: "卡帶設計",
     category: "3D Design",
-    thumbnail: "/Work/卡帶外觀1.jpg",
+    thumbnail: `${BASE_PATH}Work/卡帶外觀1.jpg`,
     video: null
   },
   {
     id: 8,
     title: "Cassette Player Model",
     category: "3D Design",
-    thumbnail: "/Work/卡帶錄放機Model.jpg",
+    thumbnail: `${BASE_PATH}Work/卡帶錄放機Model.jpg`,
     video: null
   },
   {
     id: 9,
     title: "大學生視覺",
     category: "Graphic Design",
-    thumbnail: "/Work/大學生視覺.jpg",
+    thumbnail: `${BASE_PATH}Work/大學生視覺.jpg`,
     video: null
   }
 ];
@@ -413,62 +416,62 @@ export const Box = (): JSX.Element => {
       case "intro":
         return [
           // 橫式 - 所有裝置都使用 1280-1080
-          { src: "/BG/1280-1080_intro.webm", type: "video/webm", media: "(orientation: landscape)" },
-          { src: "/BG/1280-1080_intro.mp4", type: "video/mp4", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080_intro.webm`, type: "video/webm", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080_intro.mp4`, type: "video/mp4", media: "(orientation: landscape)" },
           // 直式平板 - 使用 800-1080
-          { src: "/BG/800-1080_intro.webm", type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
-          { src: "/BG/800-1080_intro.mp4", type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080_intro.webm`, type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080_intro.mp4`, type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
           // 直式手機 - 使用 375-1080
-          { src: "/BG/375-1080_intro.webm", type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
-          { src: "/BG/375-1080_intro.webm.mp4", type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
+          { src: `${BASE_PATH}BG/375-1080_intro.webm`, type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
+          { src: `${BASE_PATH}BG/375-1080_intro.mp4`, type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
         ];
       case "home":
         return [
           // 橫式 - 所有裝置都使用 1280-1080
-          { src: "/BG/1280-1080Main_sound_optimized.mp4", type: "video/mp4", media: "(orientation: landscape)" },
-          { src: "/BG/1280-1080Main_sound.webm", type: "video/webm", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080Main_sound_optimized.mp4`, type: "video/mp4", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080Main_sound.webm`, type: "video/webm", media: "(orientation: landscape)" },
           // 直式平板 - 使用 800-1080
-          { src: "/BG/800-1080Main_sound_optimized.webm", type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
-          { src: "/BG/800-1080Main_sound_optimized.mp4", type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080Main_sound_optimized.webm`, type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080Main_sound_optimized.mp4`, type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
           // 直式手機 - 使用 375-1080
-          { src: "/BG/375-1080Main_sound_optimized.mp4", type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" },
-          { src: "/BG/375-1080Main_sound.webm", type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" }
+          { src: `${BASE_PATH}BG/375-1080Main_sound_optimized.mp4`, type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" },
+          { src: `${BASE_PATH}BG/375-1080Main_sound.webm`, type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" }
         ];
       case "work":
         return [
           // 橫式 - 所有裝置都使用 1280-1080
-          { src: "/BG/1280-1080Clean.webm", type: "video/webm", media: "(orientation: landscape)" },
-          { src: "/BG/1280-1080Clean.mp4", type: "video/mp4", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080Clean.webm`, type: "video/webm", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080Clean.mp4`, type: "video/mp4", media: "(orientation: landscape)" },
           // 直式平板 - 使用 800-1080
-          { src: "/BG/800-1080Clean.webm", type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
-          { src: "/BG/800-1080Clean.mp4", type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080Clean.webm`, type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080Clean.mp4`, type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
           // 直式手機 - 使用 375-1080
-          { src: "/BG/375-1080Clean.webm", type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
-          { src: "/BG/375-1080Clean.mp4", type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
+          { src: `${BASE_PATH}BG/375-1080Clean.webm`, type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
+          { src: `${BASE_PATH}BG/375-1080Clean.mp4`, type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
         ];
       case "about":
         return [
           // 橫式 - 所有裝置都使用 1280-1080
-          { src: "/BG/1280-1080Clean_sound.webm", type: "video/webm", media: "(orientation: landscape)" },
-          { src: "/BG/1280-1080Clean_sound.mp4", type: "video/mp4", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080Clean_sound.webm`, type: "video/webm", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080Clean_sound.mp4`, type: "video/mp4", media: "(orientation: landscape)" },
           // 直式平板 - 使用 800-1080
-          { src: "/BG/800-1080Clean_sound.webm", type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
-          { src: "/BG/800-1080Clean_sound.mp4", type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080Clean_sound.webm`, type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080Clean_sound.mp4`, type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
           // 直式手機 - 使用 375-1080
-          { src: "/BG/375-1080Clean_sound.webm", type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
-          { src: "/BG/375-1080Clean_sound.mp4", type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
+          { src: `${BASE_PATH}BG/375-1080Clean_sound.webm`, type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
+          { src: `${BASE_PATH}BG/375-1080Clean_sound.mp4`, type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
         ];
       default:
         return [
           // 橫式 - 所有裝置都使用 1280-1080
-          { src: "/BG/1280-1080_intro.webm", type: "video/webm", media: "(orientation: landscape)" },
-          { src: "/BG/1280-1080_intro.mp4", type: "video/mp4", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080_intro.webm`, type: "video/webm", media: "(orientation: landscape)" },
+          { src: `${BASE_PATH}BG/1280-1080_intro.mp4`, type: "video/mp4", media: "(orientation: landscape)" },
           // 直式平板 - 使用 800-1080
-          { src: "/BG/800-1080_intro.webm", type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
-          { src: "/BG/800-1080_intro.mp4", type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080_intro.webm`, type: "video/webm", media: "(orientation: portrait) and (min-width: 768px)" },
+          { src: `${BASE_PATH}BG/800-1080_intro.mp4`, type: "video/mp4", media: "(orientation: portrait) and (min-width: 768px)" },
           // 直式手機 - 使用 375-1080
-          { src: "/BG/375-1080_intro.webm", type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
-          { src: "/BG/375-1080_intro.webm.mp4", type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
+          { src: `${BASE_PATH}BG/375-1080_intro.webm`, type: "video/webm", media: "(orientation: portrait) and (max-width: 767px)" },
+          { src: `${BASE_PATH}BG/375-1080_intro.mp4`, type: "video/mp4", media: "(orientation: portrait) and (max-width: 767px)" }
         ];
     }
   };
@@ -505,7 +508,7 @@ export const Box = (): JSX.Element => {
       {/* 背景音樂 */}
       <audio
         ref={bgmRef}
-        src="/SoundEffect/BGM01.mp3"
+        src={`${BASE_PATH}SoundEffect/BGM.mp3`}
         loop
         preload="auto"
         className="hidden"
@@ -514,7 +517,7 @@ export const Box = (): JSX.Element => {
       {/* UI 音效 */}
       <audio
         ref={uiSoundRef}
-        src="/SoundEffect/ui-sound-on-270295.mp3"
+        src={`${BASE_PATH}SoundEffect/ui-sound-on-270295.mp3`}
         preload="auto"
         className="hidden"
       />
