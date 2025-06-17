@@ -531,7 +531,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape1, rotate: '58deg'}}
             className="pointer-events-none select-none fixed right-[-50vw] top-[-5vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo2Ref}
@@ -539,7 +539,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape2, rotate: '5deg'}}
             className="pointer-events-none select-none fixed right-[-10vw] top-[-28vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           {/* 左下角兩條 */}
           <video
@@ -548,7 +548,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape3, rotate: '0deg'}}
             className="pointer-events-none select-none fixed left-[-20vw] bottom-[-30vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo4Ref}
@@ -556,7 +556,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape4, rotate: '25deg'}}
             className="pointer-events-none select-none fixed left-[-40vw] bottom-[-25vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
         </>
       )}
@@ -570,7 +570,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape1, rotate: '58deg'}}
             className="pointer-events-none select-none fixed right-[-50vw] top-[-5vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo2Ref}
@@ -578,7 +578,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape2, rotate: '5deg'}}
             className="pointer-events-none select-none fixed right-[-10vw] top-[-28vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           {/* 左下角兩條 */}
           <video
@@ -587,7 +587,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape3, rotate: '0deg'}}
             className="pointer-events-none select-none fixed left-[-20vw] bottom-[-30vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo4Ref}
@@ -595,7 +595,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape4, rotate: '25deg'}}
             className="pointer-events-none select-none fixed left-[-40vw] bottom-[-25vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
         </>
       )}
@@ -634,7 +634,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape2 to tape4 */}
             <motion.video
@@ -666,7 +666,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape3 to tape1 */}
             <motion.video
@@ -698,7 +698,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape4 to tape2 */}
             <motion.video
@@ -730,7 +730,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
           </AnimatePresence>
         </>
@@ -744,7 +744,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape1, rotate: '58deg'}}
             className="pointer-events-none select-none fixed right-[-50vw] top-[-5vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo2Ref}
@@ -752,7 +752,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape2, rotate: '5deg'}}
             className="pointer-events-none select-none fixed right-[-10vw] top-[-28vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo3Ref}
@@ -760,7 +760,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape3, rotate: '0deg'}}
             className="pointer-events-none select-none fixed left-[-20vw] bottom-[-30vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo4Ref}
@@ -768,7 +768,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape4, rotate: '25deg'}}
             className="pointer-events-none select-none fixed left-[-40vw] bottom-[-25vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
         </>
       )}
@@ -809,7 +809,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape2 to tape4 */}
             <motion.video
@@ -841,7 +841,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape3 to tape1 */}
             <motion.video
@@ -873,7 +873,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape4 to tape2 */}
             <motion.video
@@ -905,7 +905,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
           </AnimatePresence>
         </>
@@ -919,7 +919,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape3, rotate: '0deg'}}
             className="pointer-events-none select-none fixed left-[-20vw] bottom-[-30vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo4Ref}
@@ -927,7 +927,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape4, rotate: '25deg'}}
             className="pointer-events-none select-none fixed left-[-40vw] bottom-[-25vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo1Ref}
@@ -935,7 +935,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape1, rotate: '58deg'}}
             className="pointer-events-none select-none fixed right-[-50vw] top-[-5vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo2Ref}
@@ -943,7 +943,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape2, rotate: '5deg'}}
             className="pointer-events-none select-none fixed right-[-10vw] top-[-28vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
         </>
       )}
@@ -984,7 +984,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape2 to tape4 */}
             <motion.video
@@ -1016,7 +1016,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape3 to tape1 */}
             <motion.video
@@ -1048,7 +1048,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
             {/* tape4 to tape2 */}
             <motion.video
@@ -1080,7 +1080,7 @@ export const Box = (): JSX.Element => {
                 ease: 'easeInOut',
               }}
             >
-              <source src="/BG/Bar.webm" type="video/webm" />
+              <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
             </motion.video>
           </AnimatePresence>
         </>
@@ -1094,7 +1094,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape1, rotate: '0deg'}}
             className="pointer-events-none select-none fixed right-[-135vw] top-[-15vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo2Ref}
@@ -1102,7 +1102,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape2, rotate: '0deg'}}
             className="pointer-events-none select-none fixed right-[-140vw] top-[-20vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo3Ref}
@@ -1110,7 +1110,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape3, rotate: '0deg'}}
             className="pointer-events-none select-none fixed right-[-130vw] top-[-10vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
           <video
             ref={tapeVideo4Ref}
@@ -1118,7 +1118,7 @@ export const Box = (): JSX.Element => {
             style={{...tapeStyles.tape4, rotate: '-90deg'}}
             className="pointer-events-none select-none fixed left-[-55vw] bottom-[0vw] w-[120vw] max-w-none"
           >
-            <source src="/BG/Bar.webm" type="video/webm" />
+            <source src={`${BASE_PATH}BG/Bar.webm`} type="video/webm" />
           </video>
         </>
       )}
