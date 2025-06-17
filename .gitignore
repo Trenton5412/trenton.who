@@ -1,0 +1,73 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env.local
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 只排除超過50MB的大型檔案
+public/BG/Bar.webm
+public/BG/1280-1080Clean.webm
+public/BG/1280-1080Clean_sound.webm
+public/BG/1280-1080Main_sound.webm
+public/BG/800-1080Clean.webm
+public/BG/800-1080Clean_sound.webm
+public/BG/800-1080Main_sound.webm
+public/BG/lava.mp4
+public/BG/800-1080Clean.mp4
+public/BG/375-1080Clean.mp4
+public/BG/375-1080Clean_sound.mp4
+public/BG/800-1080Clean_sound.mp4
+public/BG/375-1080Main_sound.mp4
+public/BG/1280-1080Main_sound.mp4
+public/BG/1280-1080Clean_sound.mp4
+public/BG/1280-1080Clean.mp4
+public/Work/SANDWICH.mp4
+public/Work/乖乖乖乖乖.mp4
+public/Work/全國古蹟日.mp4
+public/Work/漸速耐力折返跑.mp4
+
+# 保留優化過的小檔案
+!public/BG/*_optimized.*
+!public/BG/*_intro.*
+!public/Work/Anime*.mp4
+!public/Work/SANDWICH_Loop.mp4
