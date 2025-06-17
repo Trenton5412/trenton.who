@@ -45,7 +45,6 @@ dist-ssr
 .env.production.local
 
 # 只排除超過50MB的大型檔案
-public/BG/Bar.webm
 public/BG/1280-1080Clean.webm
 public/BG/1280-1080Clean_sound.webm
 public/BG/1280-1080Main_sound.webm
